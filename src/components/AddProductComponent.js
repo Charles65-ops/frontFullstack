@@ -3,14 +3,15 @@ import ProductService from '../ProductService';
 import { useNavigate } from 'react-router-dom';
 
 const AddProductComponent = () => {
-    const [name, setName] = useState('');
-    const [description, setDescription] = useState('');
-    const [price, setPrice] = useState('');
+    const [nome, setNome] = useState('');
+    const [descricao, setDescricao] = useState('');
+    const [preco, setPreco] = useState('');
+
     const navigate = useNavigate();
 
     const saveProduct = (e) => {
         e.preventDefault();
-        const product = { name, description, price };
+        const product = { nome, descricao, preco };
         ProductService.createProduct(product).then(() => {
             navigate('/products');
         });
@@ -27,17 +28,17 @@ const AddProductComponent = () => {
                                 <div className="form-group">
                                     <label> Product Name: </label>
                                     <input placeholder="Name" name="name" className="form-control"
-                                           value={name} onChange={(e) => setName(e.target.value)} />
+                                           value={nome} onChange={(e) => setNome(e.target.value)} />
                                 </div>
                                 <div className="form-group">
                                     <label> Product Description: </label>
                                     <input placeholder="Description" name="description" className="form-control"
-                                           value={description} onChange={(e) => setDescription(e.target.value)} />
+                                           value={descricao} onChange={(e) => setDescricao(e.target.value)} />
                                 </div>
                                 <div className="form-group">
                                     <label> Product Price: </label>
                                     <input placeholder="Price" name="price" className="form-control"
-                                           value={price} onChange={(e) => setPrice(e.target.value)} />
+                                           value={preco} onChange={(e) => setPreco(e.target.value)} />
                                 </div>
                                 <button className="btn btn-success" onClick={saveProduct}>Save</button>
                             </form>
