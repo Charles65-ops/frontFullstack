@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import UserService from '../UserService';
+import UserService from '../../src/services/UserService';
 import { Link } from 'react-router-dom';
 
 const UserListComponent = () => {

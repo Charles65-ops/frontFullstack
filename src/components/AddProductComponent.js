@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProductService from '../ProductService';
+import ProductService from '../../src/services/ProductService';
 import { useNavigate } from 'react-router-dom';
 
 const AddProductComponent = () => {

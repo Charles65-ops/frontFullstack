@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import UserService from '../UserService';
+import UserService from '../../src/services/UserService';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const UpdateUserComponent = () => {

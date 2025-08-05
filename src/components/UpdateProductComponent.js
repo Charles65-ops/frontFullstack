@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ProductService from '../ProductService';
+import ProductService from '../../src/services/ProductService';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const UpdateProductComponent = () => {
