@@ -41,6 +41,7 @@ const ProductListComponent = () => {
                     ))}
                     </tbody>
                 </table>
+                <Link to="/" className="btn btn-primary mb-2">Home</Link>
             </div>
         </div>
     );
