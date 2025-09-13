@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProductService from '../../src/services/ProductService';
 import { Link } from 'react-router-dom';
+import './ProductListComponent.css'; 
 
 const ProductListComponent = () => {
     const [products, setProducts] = useState([]);
@@ -13,6 +14,7 @@ const ProductListComponent = () => {
 
     return (
         <div>
+            
             <h2 className="text-center">Product List</h2>
             <div className="row">
                 <Link to="/add-product" className="btn btn-primary">Add Product</Link>

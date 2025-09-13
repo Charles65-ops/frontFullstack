@@ -1,0 +1,72 @@
+/* Estilos para o título e o container principal */
+.product-list-container {
+    padding: 30px;
+    background-color: #2c2c2c; /* Fundo escuro para a área da lista */
+    color: #ddd; /* Cor do texto */
+    min-height: 100vh; /* Ocupa a altura total */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra interna sutil */
+  }
+  
+  .product-list-container h2 {
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para o botão "Add Product" */
+  .add-product-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #7A0C0C; /* Vermelho escuro, como nos outros botões */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* Brilho sutil */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Espaço abaixo do botão */
+  }
+  
+  .add-product-btn:hover {
+    background-color: #9C1111;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+  }
+  
+  /* Estilos para a tabela */
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #444; /* Fundo mais claro para a tabela para se destacar do container */
+    border: 1px solid #555;
+    border-radius: 8px;
+    overflow: hidden; /* Para que o border-radius funcione com as células */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #555; /* Linhas divisórias entre as células */
+  }
+  
+  .product-table thead {
+    background-color: #383838; /* Cabeçalho mais escuro */
+    color: #fff;
+  }
+  
+  .product-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Estilos para linhas alternadas (efeito 'striped') */
+  .product-table tbody tr:nth-child(even) {
+    background-color: #4a4a4a;
+  }
+  
+  /* Estilos para a última linha da tabela */
+  .product-table tbody tr:last-child td {
+    border-bottom: none;
+  }

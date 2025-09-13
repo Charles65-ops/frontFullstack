@@ -7,8 +7,7 @@ const HomeComponent = () => {
     <div className="home-container">
       <div className="overlay">
         <header className="home-header">
-          <h1>🚀 MoviTech System</h1>
-          <p>Gerencie Produtos e Usuários com Eficiência</p>
+          <h1> Gerenciamento de Produtos e Usuários. </h1>
         </header>
 
         <main className="home-menu">
@@ -19,7 +18,7 @@ const HomeComponent = () => {
         </main>
 
         <footer className="home-footer">
-          <p>© 2025 MoviTech - Desenvolvido por Charles</p>
+          <p>© 2025 MoviTech</p>
         </footer>
       </div>
     </div>
